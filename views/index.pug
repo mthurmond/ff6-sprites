@@ -1,5 +1,12 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  .container
+    h1= title
+    p Click a character to get to know them
+    a(href="/edgar")
+      img.w-25.shadow(src="/images/edgar.jpg" class="rounded float-left" alt="edgar")
+    a(href="/kefka")
+      img.w-25.shadow(src="/images/kefka.jpg" class="rounded float-right" alt="kefka")
+    a(href="/terra")
+      img.w-25.shadow(src="/images/terra.jpg" class="rounded float-right" alt="terra")
