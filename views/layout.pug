@@ -6,4 +6,11 @@ html
     link(rel='stylesheet' type='text/css' href='/bootstrap/dist/css/bootstrap.css')
     link(rel='icon' type='image/png' sizes='16x16' href='/images/terra-favicon.jpg')
   body
-    block content
+    .container(style='max-width: 60em;')
+      a.text-decoration-none(href="/" style='color: #212529;')
+        .d-flex.flex-column.align-items-center
+          div
+            img.rounded-circle.shadow(src="/images/terra-favicon.jpg" width="80" height="80" alt="Terra")
+          div
+            .display-5 Final Fantasy VI sprites
+      block content

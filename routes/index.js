@@ -19,7 +19,7 @@ const characterData = {
 	},
   kefka: {
 		name: 'Kefka Palazzo',
-		intro: 'An ambitous sorceror that is second in command to the emperor',
+		intro: 'An ambitous sorceror second in command to the emperor',
 		details: 'Kefka Palazzo is the court mage of the Gestahlian Empire. He was their first experimental Magitek Knight, giving him the ability to use magic. However, the process was not yet perfected and the infusion damaged his mind, transforming him into a maniacal harlequin with an unquenchable thirst for blood. Chaotic and unpredictable in his drive to cause destruction, Kefka eventually (spoiler alert) turned on Emperor Gestahl and seized control of the Warring Triad to become the god of magic.'
 	}
 };

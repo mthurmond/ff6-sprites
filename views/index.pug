@@ -1,12 +1,35 @@
 extends layout
 
 block content
-  .container
-    h1= title
-    p Click a character to get to know them
-    a(href="/edgar")
-      img.w-25.shadow(src="/images/edgar.jpg" class="rounded float-left" alt="edgar")
-    a(href="/kefka")
-      img.w-25.shadow(src="/images/kefka.jpg" class="rounded float-right" alt="kefka")
-    a(href="/terra")
-      img.w-25.shadow(src="/images/terra.jpg" class="rounded float-right" alt="terra")
+  
+  .d-flex.flex-row.align-items-center.justify-content-center
+    div
+      .fs-4.pt-5.pb-2 Click a character to learn more
+  .d-flex.flex-wrap.flex-container.justify-content-center
+    div.p-4
+      a(href="/edgar")
+        img.character-image.shadow(src="/images/edgar.jpg" alt="edgar")
+    div.p-4
+      a(href="/kefka")
+        img.character-image.shadow(src="/images/kefka.jpg" alt="kefka")
+    div.p-4
+      a(href="/terra")
+        img.character-image.shadow(src="/images/terra.jpg" alt="terra")
+    div.p-4
+      a(href="/edgar")
+        img.character-image.shadow(src="/images/edgar.jpg" alt="edgar")
+    div.p-4
+      a(href="/kefka")
+        img.character-image.shadow(src="/images/kefka.jpg" alt="kefka")
+    div.p-4
+      a(href="/terra")
+        img.character-image.shadow(src="/images/terra.jpg" alt="terra")
+    div.p-4
+      a(href="/edgar")
+        img.character-image.shadow(src="/images/edgar.jpg" alt="edgar")
+    div.p-4
+      a(href="/kefka")
+        img.character-image.shadow(src="/images/kefka.jpg" alt="kefka")
+    div.p-4
+      a(href="/terra")
+        img.character-image.shadow(src="/images/terra.jpg" alt="terra")

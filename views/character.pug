@@ -2,7 +2,8 @@ extends layout
 
 block content
   .container
-    h1= name
-    p= intro  
-    img.w-25.shadow(src=image class="rounded float-right" alt="kefka")
-    p.pt-5= details
+    .d-flex.flex-column.align-items-center.justify-content-center
+      .fs-2.pt-5= name
+      p.lead.fs-4= intro
+      img.w-25.shadow.rounded(src=image alt=name)
+      p.fs-5.pt-5(style='max-width: 32em; text-align: justify')= details
