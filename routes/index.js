@@ -17,6 +17,16 @@ const characterData = {
 		intro: 'A magitek knight forged by the Empire',
 		details: 'Celes was raised in the Gestahlian Empire and turned into a Magitek Knight. She rose through the ranks to become a general. However, she becomes disillusioned with the Empire and turns traitor, joining the Returners and forming a friendship with Locke. In the World of Ruin, she takes on the primary role of finding her friends and bringing them back together to strike back at Kefka and free the world from his rule.'
 	},	
+	chupon: {
+		name: 'Chupon',
+		intro: 'A strange and powerful villan',
+		details: 'Chupon is a beast of a warrior and a close friend of Ultros, the giant villan octopus. He only attacks the party a few times, but when he does, he packs a mean punch. He also fights in the colloseum when valulable items are at stake and sneezes opponents away.'
+	},	
+	cid: {
+		name: 'Cid',
+		intro: 'Celeste\'s mentor',
+		details: 'Cid raised Celeste as if she were his daughter and they both worked for the emperor together. Cid was close to, but not quite, in the inner circle of Emperor Gesthal. He helped him extract magic from espers and invented Magitek, a broad technological category that includes powerful weapons and armor.'
+	},
 	cyan: {
 		name: 'Cyan Garamonde',
 		intro: 'A noble warrior from a foreign land',
@@ -32,11 +42,21 @@ const characterData = {
 		intro: 'A youth draped in monster hides',
 		details: 'Gau is a feral child who grew up on the Veldt, learning to mimic the behavior of monsters. Sabin and Cyan earn his trust he becomes an unlikely ally of the Returners. During childbirth Gau\'s mother died and his father went mad with grief. He believed Gau was a demon and abandoned him. Gau\'s father later convinced himself it was all a dream and he never had a wife or son. Gau is driven to reunite with his father and perhaps, the citizens of Mobliz where he was born.'
 	},	
+	gesthal: {
+		name: 'Emperor Gesthal',
+		intro: 'A powerful world ruler seeking magic',
+		details: 'Gesthal has been on a multi-decade quest to unearth magic for himself and his army so he can take more and more territory. Kefka and Leo are in his inner circle, but he should be more careful when selecting friends.'
+	},	
 	gogo: {
 		name: 'Gogo',
 		intro: 'A man shrouded in strange clothing',
 		details: 'Little is know about Gogo. He is found in the belly of a Zone Eater dressed in odd clothes and could be a man or women. He surprisingly joins the party and is a mime, able to mimic the actions of his friends.'
 	},	 
+	interceptor: {
+		name: 'Interceptor',
+		intro: 'Shadow\'s loyal sidekick',
+		details: 'Interceptor is Shadow\'s powerful doberman who blocks attacks and has a soft spot for children. He has the courage to rush into a burning home to save Relm, but otherwise adults should tread softly around this powerful K-9 and his ninja owner.'
+	},	
 	kefka: {
 		name: 'Kefka Palazzo',
 		intro: 'An ambitous sorceror second in command to the emperor',
@@ -101,6 +121,11 @@ const characterData = {
 		name: 'Umaro',
 		intro: 'A yeti with a love for bone carvings',
 		details: 'Umaro is a mysterious character who\'s stronger than a gigas, though a bit unruly. He lives deep in the Narshe Mines, and his only friends are the moogles. He joines the party in the World of Ruin and can only be coaxed into cooperation by Mog.'
+	},
+	ultros: {
+		name: 'Ultros',
+		intro: 'An aggressive and mysterious Octopus',
+		details: 'Ultros comes out of nowhere to thwart the party\'s efforts. His origins are a mystery and he always comes packing  heat, with tentacles flying, and escapes before he can be vanquished entirely. He likes to crack jokes and come up with interesting schemes.'
 	},
 };
 

@@ -7,7 +7,15 @@ a {
   color: #00B7FF;
 }
 
-.character-image {
+.character-image-general {
+  width: 5em;
+}
+
+.character-image-short {
+  width: 3.5em;
+}
+
+.character-image-constrained {
   width: 5em;
   height: 8em;
 }

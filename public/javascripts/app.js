@@ -6,10 +6,14 @@ document.addEventListener("DOMContentLoaded", function () {
         const characters = [
             'banon',
             'celes',
+            'chupon',
+            'cid',
             'cyan',
             'edgar',
             'gau',
+            'gesthal',
             'gogo',
+            'interceptor',
             'kefka',
             'leo',
             'locke',
@@ -22,12 +26,21 @@ document.addEventListener("DOMContentLoaded", function () {
             'shadow',
             'strago',
             'terra',
+            'ultros',
             'umaro',
         ]
         let html = ''
         for (let i = 0; i < characters.length; i++) {
             const character = characters[i]
-            html = html + `<div class="p-4"><a href="/${character}"><img class="character-image" src="/images/${character}.jpg" alt="${character}" data-character="${character}"></a></div>`
+            let imageFormatClass = ''
+            if (character === 'gau' || character === 'madeline' || character === 'terra') {
+                imageFormatClass = 'character-image-constrained'
+            } else if (character === 'interceptor') {
+                imageFormatClass = 'character-image-short'
+            } else {
+                imageFormatClass = 'character-image-general'
+            }
+            html = html + `<div class="p-4 d-flex flex-column justify-content-center"><a href="/${character}"><img class="${imageFormatClass} character-image" src="/images/${character}.jpg" alt="${character}" data-character="${character}"></a></div>`
         }
         imageContainer.innerHTML = html
 
