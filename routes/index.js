@@ -124,7 +124,7 @@ const characterData = {
 	},
 	ultros: {
 		name: 'Ultros',
-		intro: 'An aggressive and mysterious Octopus',
+		intro: 'An aggressive and mysterious octopus',
 		details: 'Ultros comes out of nowhere to thwart the party\'s efforts. His origins are a mystery and he always comes packing  heat, with tentacles flying, and escapes before he can be vanquished entirely. He likes to crack jokes and come up with interesting schemes.'
 	},
 };
