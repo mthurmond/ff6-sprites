@@ -1,6 +1,6 @@
 ## ff6 sprites
-An ode to my favirite video game: Final Fantasy 6 for snes. This simple site lets you view the character sprites and read a bit of backstory on each one. 
-
-Thanks to the [ff6 fandom wiki](https://finalfantasy.fandom.com/wiki/Final_Fantasy_Wiki) for character details and the [ff6 video game sprites page](http://www.videogamesprites.net/FinalFantasy6/) for the images.
-
 Visit [the site here](https://ff6-sprites.herokuapp.com/).
+
+This is an ode to my favirite video game: Final Fantasy 6 for snes. You can view the character sprites, read their backstory, and listen to their theme song. 
+
+Thanks to [video game sprites](http://www.videogamesprites.net/FinalFantasy6/) for the images, [fandom](https://finalfantasy.fandom.com/wiki/Final_Fantasy_Wiki) for the character details,  and [zophar](https://www.zophar.net/music/nintendo-snes-spc/final-fantasy-vi) for the audio.

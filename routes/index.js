@@ -132,10 +132,11 @@ const characterData = {
 router.get('/:character', function(req, res, next) {
   const character = req.params.character
   const imageUrl = '/images/' + character + '.jpg'
+  const audioUrl = '/audio/' + character + '.mp3'
   const characterName = characterData[character].name
   const characterIntro = characterData[character].intro
   const characterDetails = characterData[character].details
-  res.render('character', { image: imageUrl, name: characterName, intro: characterIntro, details: characterDetails });
+  res.render('character', { image: imageUrl, audio: audioUrl, name: characterName, intro: characterIntro, details: characterDetails });
 });
 
 module.exports = router;

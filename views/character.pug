@@ -7,4 +7,7 @@ block content
       img.mt-5.character-image-general(src=image alt=name)
       .fs-2.pt-2= name
       p.lead.fs-4= intro
+      if audio
+        audio(controls)
+          source(src=audio type="audio/mpeg")
       p.fs-5.pt-4(style='max-width: 32em; text-align: justify')= details
