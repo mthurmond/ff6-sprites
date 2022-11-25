@@ -1,3 +1,4 @@
+import sys
 import pandas as pd
 
 # update pickle file with latest excel
@@ -74,7 +75,14 @@ def get_scene_dialogue(person):
 
 person = "Terra"
 scene_dialogue_list = get_scene_dialogue(person)
-print(scene_dialogue_list)
+# print(scene_dialogue_list)
 
 char_speaking_info = get_dialogue(person)
-print(f"\n\n{person} speaks {char_speaking_info[0]} times with {char_speaking_info[1]} total words.\n\n")
+# print(f"\n\n{person} speaks {char_speaking_info[0]} times with {char_speaking_info[1]} total words.\n\n")
+
+# char_passed = sys.argv[1]
+# char_speaking_info = get_dialogue(char_passed)
+# print(char_speaking_info)
+
+dialogue_json = dialogue.to_json()
+print(dialogue_json)
