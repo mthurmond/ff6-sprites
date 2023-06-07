@@ -10,4 +10,11 @@ block content
       if audio
         audio(controls)
           source(src=audio type="audio/mpeg")
-      p.fs-5.pt-4(style='max-width: 32em; text-align: justify')= details
+      p.fs-5.pt-4.pb-4.border-bottom(style='max-width: 32em; text-align: justify')= details
+    if times !== 'unknown'
+      .d-flex.flex-column.align-items-center.justify-content-center.mb-4
+        p.lead.fs-4.mt-3 #{name} speaks #{times} times with #{words} total words.
+        //- p.lead.fs-5 #{scenes}
+        ul.fs-5
+          each val, key in scenes[i]
+            li(style='max-width: 32em; text-align: justify')= val

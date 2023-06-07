@@ -1,0 +1,29 @@
+{
+    "columns": [
+        "Scene",
+        "Character",
+        "Dialogue"
+    ],
+    "index": [
+        1737,
+        1739,
+        1738
+    ],
+    "data": [
+        [
+            500.0,
+            "Creature",
+            "I am Gogo, master of the simulacrum... My miming skills will astonish you."
+        ],
+        [
+            500.0,
+            "Gogo",
+            "What an unusual tale...But I sense that you're trying to help make things right again. This should be fun. When do we leave?"
+        ],
+        [
+            500.0,
+            "Gogo",
+            "Yes...I have been idle for too long. If I deem you worthy, I'll mime your actions in battle. But first you must tell me what you're doing here."
+        ]
+    ]
+}

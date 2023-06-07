@@ -1,0 +1,21 @@
+{
+    "comment": "can store it like i have below, however, could also just save as an array of arrays and send that to FE. so each item is a scene's dialog, and each dialogue is an array like the two \"dialogue\" boxes below",
+    "scenes": [
+        {
+            "id": 12,
+            "dialogue": [
+                "gogo: this is wild",
+                "terra: yes it is",
+                "setzer: indeed"
+            ]
+        },
+        {
+            "id": 143,
+            "dialogue": [
+                "cyan: wild?",
+                "shadow: i think",
+                "gogo: that's true"
+            ]
+        }
+    ]
+}

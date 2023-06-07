@@ -1,5 +1,5 @@
-import sys
 import pandas as pd
+import json
 
 # update pickle file with latest excel
 dialogue = pd.read_excel('ff6-script.xlsx')
@@ -40,12 +40,21 @@ def get_dialogue(person):
     ]
     character = character.sort_index()
     times_spoken_df = character.groupby(['Character'])[["Dialogue"]].count()
-    times_spoken = times_spoken_df['Dialogue'].values[0]
+    times_spoken = times_spoken_df['Dialogue'].values[0].item()
 
     words_spoken_df = character.groupby(['Character'])[["Wordcount"]].sum()
-    words_spoken = words_spoken_df['Wordcount'].values[0]
+    words_spoken = words_spoken_df['Wordcount'].values[0].item()
 
-    return times_spoken, words_spoken
+    # a Python object (dict):
+    speaking_info = {
+        "times": times_spoken,
+        "words": words_spoken
+    }
+
+    # convert into JSON:
+    speaking_info_json = json.dumps(speaking_info)
+
+    return speaking_info_json
 
 # get list of all scenes a character speaks in
 def get_scenes(person):
@@ -73,16 +82,46 @@ def get_scene_dialogue(person):
         scene_dialogue_list.append(scene_dialogue)
     return scene_dialogue_list
 
-person = "Terra"
+person = "Gogo"
 scene_dialogue_list = get_scene_dialogue(person)
 # print(scene_dialogue_list)
 
 char_speaking_info = get_dialogue(person)
-# print(f"\n\n{person} speaks {char_speaking_info[0]} times with {char_speaking_info[1]} total words.\n\n")
+# Writing to sample.json
+with open("../public/dialogue/gogo.json", "w") as outfile:
+    outfile.write(char_speaking_info)
 
 # char_passed = sys.argv[1]
 # char_speaking_info = get_dialogue(char_passed)
 # print(char_speaking_info)
 
-dialogue_json = dialogue.to_json()
-print(dialogue_json)
+# dialogue_json = dialogue.to_json()
+# print(dialogue_json)
+
+# filter dialogue to only show scenes in list
+scenes = get_scenes(person)
+
+filtered_df = dialogue[dialogue['Scene'].isin(scenes)]
+scenes_json = filtered_df.to_json()
+
+scene_dialogue_list = []
+
+def get_initial_scene():
+    scenes = get_scenes(person)
+    for scene in scenes:
+        scene_dialogue = dialogue[
+            (dialogue['Scene'] == scene)
+        ]
+        scene_dialogue = scene_dialogue[[
+            'Scene',
+            'Character',
+            'Dialogue'
+        ]]
+        result = scene_dialogue.to_json(orient="split")
+        # parsed = json.loads(result)
+        with open("../public/dialogue/gogo-scene.json", "w") as outfile:
+            outfile.write(result)
+
+        return result
+
+firstscene = get_initial_scene()
