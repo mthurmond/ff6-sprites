@@ -112,7 +112,7 @@ const characterData = {
 	umaro: {
 		name: 'Umaro',
 		intro: 'A yeti with a love for bone carvings',
-		details: 'Umaro is a mysterious character who\'s stronger than a gigas, though a bit unruly. He lives deep in the Narshe Mines, and his only friends are the moogles. He joines the party in the World of Ruin and can only be coaxed into cooperation by Mog.'
+		details: 'Umaro is a mysterious character who\'s stronger than a gigas, though a bit unruly. He lives deep in the Narshe Mines, and his only friends are the moogles. He joins the party in the World of Ruin and can only be coaxed into cooperation by Mog.'
 	},
 	ultros: {
 		name: 'Ultros',
