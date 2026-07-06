@@ -16,5 +16,5 @@ block content
         p.lead.fs-4.mt-3 #{name} speaks #{times} times with #{words} total words.
         //- p.lead.fs-5 #{scenes}
         ul.fs-5
-          each val, key in scenes[i]
-            li(style='max-width: 32em; text-align: justify')= val
+          for i in scenes
+            li(style='max-width: 32em; text-align: justify')= i 

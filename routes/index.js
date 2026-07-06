@@ -37,17 +37,7 @@ router.get('/:character', function (req, res, next) {
 		console.log('sceneFilePath', sceneFilePath)
 		if (fs.existsSync(sceneFilePath)) {
 			const sceneInfo = require(sceneFilePath);
-			scene_obj = sceneInfo["data"]
-			let newobj = {}
-			let newArray = []
-			for (i in scene_obj) {
-				newobj = {
-					"char": scene_obj[i][1],
-					"line": scene_obj[i][2]
-				}
-				newArray.push(newobj)
-			}
-			return newArray;
+			return sceneInfo["data"]
 		} else {
 			console.log(`File does not exist: ${sceneFilePath}`);
 			return null;
